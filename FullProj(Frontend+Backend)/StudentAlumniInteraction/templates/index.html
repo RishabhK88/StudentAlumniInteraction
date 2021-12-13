@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="username"><br><br>
+        <label for="mail">Email ID</label>
+        <input type="email" id="mail" name="email"><br><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password"><br><br>
+        <label for="cars">Choose branch:</label>
+
+        <select name="branch" id="branch">
+        <option value="coe">COE</option>
+        <option value="ece">ECE</option>
+        <option value="mech">Mech</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>
